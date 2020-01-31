@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Display the Date Range</title>
+</head>
+<body>
+<h2>Enter the Date Range</h2>
+<form action="#" th:action="@{/result}" th:object="${dateModel}" method="post">
+<p th:text="${error}" class="error"/>
+	<label for="startDate">Start Date</label>
+    	<input type="Date" id="startDate" name="startDate" autofocus="autofocus"/><br></br>
+  
+    	<label for="endDate">End Date</label>
+    	<input type="Date" id="endDate" name="endDate"/><br></br>
+        <input type="submit" value="CONFIRM"/>
+    </form>
+</body>
+</html>
